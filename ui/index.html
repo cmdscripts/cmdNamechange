@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cmdNamechange</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app" class="hidden">
+      <div class="overlay noSelect">
+        <div class="card">
+          <div class="top">
+            <div class="title" id="title">San Andreas City Hall</div>
+            <button class="x" id="close" aria-label="Close">✕</button>
+          </div>
+
+          <div class="body">
+            <div>
+              <label>Vorname</label>
+              <input id="firstName" type="text" placeholder="Tooth" maxlength="20" inputmode="text" autocomplete="off" />
+            </div>
+
+            <div class="gap"></div>
+
+            <div>
+              <label>Nachname</label>
+              <input id="lastName" type="text" placeholder="Paste" maxlength="20" inputmode="text" autocomplete="off" />
+            </div>
+
+            <div class="gap"></div>
+
+            <div id="alertErr" class="alert err hidden"></div>
+            <div id="alertOk" class="alert ok hidden"></div>
+
+            <div class="row">
+              <button class="btn b1" id="cancel">Abbrechen</button>
+              <button class="btn b2" id="submit">Bestätigen</button>
+            </div>
+          </div>
+
+          <div class="foot" id="rule"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
